@@ -1,0 +1,27 @@
+{
+  "extends": ["airbnb", "airbnb-typescript"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": [
+    "node_modules",
+    "*.config.*"
+  ],
+  "rules": {
+    "no-nested-ternary": "warn",
+    "import/prefer-default-export": "off",
+    "react/no-array-index-key": "warn",
+    "max-len": "warn",
+    "import/extensions": [
+       "error",
+       "ignorePackages",
+       {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never",
+        "": "never"
+       }
+    ]
+ }
+}
